@@ -1,6 +1,8 @@
+extern crate digest;
 extern crate sha2;
 
-use sha2::{Digest, Sha256};
+use digest::Digest
+use sha2::Sha256;
 
 const LEAF_SIG: u8 = 0u8;
 const INTERNAL_SIG: u8 = 1u8;
